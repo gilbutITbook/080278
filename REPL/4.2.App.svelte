@@ -1,4 +1,4 @@
-<!-- 4.2. {:else if..} 블록 -->
+<!-- 4.2. {:else if ...} 블록 -->
 <script>
     let a = 1; 
 </script>

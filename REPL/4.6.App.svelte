@@ -1,4 +1,4 @@
-<!-- 4.6. Promise와 {#await..} 블록 사용하기 -->
+<!-- 4.6. Promise와 {#await ...} 블록 사용하기 -->
 
 <script>
     // async 함수 정의

@@ -1,4 +1,4 @@
-// 1. writeable 스토어 꺼내기
+// 1. writable 스토어 꺼내기
 import { writable } from "svelte/store";
 
 // 2. 사용자 정의 스토어 만드는 함수 구현
