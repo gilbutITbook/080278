@@ -28,7 +28,7 @@
 
         return {
             update(newOption){
-                // 7.옵션이 변경되면 새 옵션으로 적용함
+                // 7. 옵션이 변경되면 새 옵션으로 적용함
                 option = newOption;
             },
             

@@ -1,4 +1,4 @@
-<!-- 6.12.  하위 컴포넌트 데이터 바인딩 - App.svelte -->
+<!-- 6.12.  하위 컴포넌트 데이터 바인딩 1/2 - App.svelte -->
 
 <script>
     import { onMount } from "svelte";
