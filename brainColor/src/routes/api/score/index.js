@@ -4,7 +4,7 @@ import { nanoid } from "nanoid";       // 랜덤 문자열 발생시켜주는 na
 import { connectionString } from "$lib/dbURL.js"; // dbURL 추가
 const uri = connectionString;                     // 문자열 꺼내기
 
-export async function get(request){
+export async function get(event){ //[변경] request -> event 로 변경됨
     const client = new MongoClient(uri);         // client 객체 생성
     let scoreList = [];                          // 결과 저장 배열
     try {
@@ -37,10 +37,11 @@ export async function get(request){
     }
 }
 
-export async function put(request){
+export async function put(event){ //[변경] request -> event 로 변경됨
     const client = new MongoClient(uri);         // client 객체 생성
     let rtn = {};                                // 결과 저장 객체
-    let score = JSON.parse(request.body);        // request body를 객체로 변환
+    //let score = JSON.parse(request.body);      //[삭제]
+    let score = await event.request.json();      //[추가] request의 json 객체를 받아오기
 
     /* 입력 형식 체크 */
     if(!score.name || !score.score){
